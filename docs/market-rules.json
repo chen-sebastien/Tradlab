@@ -1,0 +1,24 @@
+{
+  "version": "TWSE-reference-2026-11-06-v1",
+  "timezone": "Asia/Taipei",
+  "scope": "白名單 0050、006208 一般股票型 ETF，2330 上市普通股票；其他商品拒絕",
+  "regular_session": "09:00–13:30（可能有暫緩開收盤等例外；本版不模擬盤中）",
+  "board_shares": 1000,
+  "odd_shares": [1, 999],
+  "stock_ticks": [[10,0.01],[50,0.05],[100,0.1],[500,0.5],[1000,1],[null,5]],
+  "etf_ticks": [[50,0.01],[null,0.05]],
+  "sell_tax_stock": 0.003,
+  "sell_tax_stock_etf": 0.001,
+  "fee_rate_assumption": 0.001425,
+  "minimum_fee_assumption": 20,
+  "fee_note": "手續費由券商自行訂定；0.1425% 與最低 20 元僅工程模擬參數，非所有券商適用標準。無當沖優惠。",
+  "settlement": "實際有 T+2 交割；本版明確簡化即時交割",
+  "calendar": "DEMO 為合成交易日；REPLAY 僅沿資料列日期推進，不宣稱完整官方假日／停牌日曆",
+  "price_band": "未取得真實開盤競價基準，僅以當日 high/low ±10% 為研究提案保護區間，非真實漲跌停驗證",
+  "sources": [
+    {"title":"TWSE 集中市場交易制度（交易單位、時段、升降單位）", "url":"https://www.twse.com.tw/zh/products/system/trading.html"},
+    {"title":"TWSE ETF 交易規則與證交稅", "url":"https://www.twse.com.tw/zh/products/securities/etf/overview/rules.html"},
+    {"title":"TWSE 臺灣投資指南（手續費、交易稅、交割）", "url":"https://www.twse.com.tw/zh/about/company/guide.html"},
+    {"title":"TWSE STOCK_DAY 公開月日線", "url":"https://www.twse.com.tw/exchangeReport/STOCK_DAY?response=json&date=20250101&stockNo=0050"}
+  ]
+}
